@@ -1,4 +1,4 @@
 #!/bin/bash
 now="$(date)"
-speedtest >> $HOME/speedlog.txt
-(echo "Subject: $HOSTNAME - $now"; cat $HOME/speedlog.txt; ) | sendmail zagaglioni@gmail.com
+speedtest >> $HOME/speed2mail/speedlog.txt
+(echo "Subject: $HOSTNAME - $now"; cat $HOME/speed2mail/speedlog.txt; ) | sendmail zagaglioni@gmail.com
